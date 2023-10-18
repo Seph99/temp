@@ -19,9 +19,9 @@
 
 :root {
 	font-size: 13px;
-	--color-text: #fff;
-	--color-bg: #000;
-	--color-link: #fff;
+	--color-text: #000;
+	--color-bg: #fcd9e8;
+	--color-link: #020202;
 	--color-link-hover: #fff;
 	--img-width: 190px;
 	--img-ratio: 1.1;
@@ -191,7 +191,7 @@ main {
 
 .meta__title {
 	margin: 0;
-	font-size: clamp(2rem,5vw,5rem);
+	font-size: clamp(2rem,2vw,2rem);
 	font-weight: 300;
 }
 

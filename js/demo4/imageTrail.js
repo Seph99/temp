@@ -149,7 +149,7 @@ export class ImageTrail {
             x: cacheMousePos.x - img.rect.width/2 ,
             y: cacheMousePos.y - img.rect.height/2
         }, {
-            duration: 0.4,
+            duration: 0.6,
             ease: 'power1',
             scale: 1,
             x: mousePos.x - img.rect.width/2,
@@ -160,7 +160,7 @@ export class ImageTrail {
             scale: 2,
             filter: `brightness(${ Math.max(400*distance/100, 100) }%) contrast(${ Math.max(400*distance/100, 100) }%)`
         }, {
-            duration: 0.4,
+            duration: 0.6,
             ease: 'power1',
             scale: 1,
             filter: 'brightness(100%) contrast(100%)'
@@ -168,12 +168,12 @@ export class ImageTrail {
         /* Inner image */
         // then make it disappear
         .to(img.DOM.el, {
-            duration: 0.4,
+            duration: 1,
             ease: 'power3',
             opacity: 0
         }, 0.4)
         .to(img.DOM.el, {
-            duration: 1.5,
+            duration: 2,
             ease: 'power4',
             x: "+=" + (dx * 110), // Adjust the multiplier as needed
             y: "+=" + (dy * 110)  // Adjust the multiplier as needed
